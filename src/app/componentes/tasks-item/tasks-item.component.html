@@ -1,4 +1,8 @@
 <div class="task">
-    <h5>{{ task.texto }}</h5>
-    <p>{{ task.dia }}</p>
+    <h5>
+        {{ task.texto }}<fa-icon class="d-flex justify-content-end" [icon]="faTimes" [ngStyle]="{'color':'red'}"></fa-icon>
+    </h5>
+    <p>
+        {{ task.dia }}
+    </p>
 </div>
