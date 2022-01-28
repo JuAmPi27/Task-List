@@ -1,6 +1,6 @@
-<div class="task rounded">
+<div class="task rounded" [ngClass]="{recordatorio: task.recordatorio}">
     <h5>
-        {{ task.texto }}<fa-icon class="d-flex justify-content-end" [icon]="faTimes" [ngStyle]="{'color':'red'}"></fa-icon>
+         {{ task.texto }}<fa-icon class="d-flex justify-content-end" [icon]="faTimes" [ngStyle]="{'color':'red'}" (click)="onDelete(task)"></fa-icon>  <!--paso 1 (click)="onDelete(task)"-->
     </h5>
     <p>
         {{ task.dia }}

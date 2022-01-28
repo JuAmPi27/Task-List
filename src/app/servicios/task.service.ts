@@ -16,4 +16,9 @@ export class TaskService {
     return this.http.get<task[]>(this.apiUrl);
   }
 
+  deleteTask(task:task): Observable<task> { // paso 7
+     const url = `${this.apiUrl}/${task.id}` // comillas invertidas alt 96
+    return this.http.delete<task>(url);
+  }
+
 }
