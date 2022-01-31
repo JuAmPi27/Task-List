@@ -1,4 +1,4 @@
-<div class="task rounded" [ngClass]="{recordatorio: task.recordatorio}">
+<div class="task rounded" [ngClass]="{recordatorio: task.recordatorio}" (click)="onToggle(task)">
     <h5>
          {{ task.texto }}<fa-icon class="d-flex justify-content-end" [icon]="faTimes" [ngStyle]="{'color':'red'}" (click)="onDelete(task)"></fa-icon>  <!--paso 1 (click)="onDelete(task)"-->
     </h5>

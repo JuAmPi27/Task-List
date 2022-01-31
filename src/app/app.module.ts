@@ -10,6 +10,8 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { ButtonComponent } from './componentes/button/button.component';
 import { TasksComponent } from './componentes/tasks/tasks.component';
 import { TasksItemComponent } from './componentes/tasks-item/tasks-item.component';
+import { AddTaskComponent } from './componentes/add-task/add-task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { TasksItemComponent } from './componentes/tasks-item/tasks-item.componen
     HeaderComponent,
     ButtonComponent,
     TasksComponent,
-    TasksItemComponent
+    TasksItemComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,4 +21,13 @@ deleteTask(task:task) { // paso 6...vamos a recibir una tarea y se la tenemos qu
   this.taskService.deleteTask(task).subscribe(() => {this.tasks = this.tasks.filter((t) => t.id !==task.id)}); //paso 8
 }
 
+toggleRecordatorio(task:task) {
+  task.recordatorio = !task.recordatorio;
+  this.taskService.updateTaskRecordatorio(task).subscribe(); // con esto se lo pasamos a ntro servicio para que la actualice en ntra base de datos
+}
+
+addTask(task:task) {
+  this.taskService.addTask(task).subscribe(task => {this.tasks.push(task)});
+}
+
 }

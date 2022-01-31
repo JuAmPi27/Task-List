@@ -1,3 +1,9 @@
-<app-tasks-item *ngFor="let tasks of tasks" [task]="tasks" (onDeleteTask)="deleteTask(tasks)"> <!-- paso 5  y luego vamos al task.component.ts para crear la funcion deleteTask-->
-    {{tasks.texto}}
+<app-add-task 
+    (onAddTask)="addTask($event)"
+></app-add-task>
+
+<app-tasks-item 
+    *ngFor="let tasks of tasks" 
+    [task]="tasks" (onDeleteTask)="deleteTask(tasks)"  
+    (onToggleRecordatorio)="toggleRecordatorio(tasks)"> <!-- paso 5  y luego vamos al task.component.ts para crear la funcion deleteTask-->
 </app-tasks-item> 

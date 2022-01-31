@@ -10,7 +10,14 @@
     padding: 0;
 }
 body{
-    font-family: sans-serif;    
+    font-family: 'Gloria Hallelujah', cursive;   
+}
+
+.titulo {
+    font-family: 'Bebas Neue', cursive;
+    color: #370665;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .container{
@@ -30,6 +37,8 @@ body{
     transform: scale(0.98);
 }
 .btn-block {
+    color: orange;
+    background-color: black;
     display: block;
     width: 100%;
 }

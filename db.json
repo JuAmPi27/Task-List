@@ -3,25 +3,31 @@
     {
       "id": 1,
       "texto": "Terminar primer módulo de angular",
-      "dia": "5 de agosto a las 10:00",
-      "recordatorio": true
+      "dia": "5 de agosto a las 9:00",
+      "recordatorio": false
     },
     {
       "id": 2,
-      "texto": "Leer",
-      "dia": "5 de agosto a las 12:00",
+      "texto": "Hacer las compras",
+      "dia": "5 de agosto a las 11:00",
       "recordatorio": true
     },
     {
       "id": 3,
-      "texto": "Entrenar",
+      "texto": "Entrenamiento",
       "dia": "5 de agosto a las 16:00",
       "recordatorio": false
     },
     {
       "id": 4,
-      "texto": "Hacer las compras",
-      "dia": "6 de agosto a las 10:00",
+      "texto": "Investigar sobre Bootstrap",
+      "dia": "5 de agosto a las 18:00",
+      "recordatorio": true
+    },
+    {
+      "id": 5,
+      "texto": "Leer",
+      "dia": "5 de agosto a las 20:00",
       "recordatorio": true
     }
   ]
